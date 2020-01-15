@@ -4,7 +4,7 @@
     "contentApiKey": "3ba589d4580bdb80a92187ceab"
   },
   "production": {
-    "apiUrl": "138.197.200.84",
+    "apiUrl": "http://138.197.200.84",
     "contentApiKey": "3ba589d4580bdb80a92187ceab"
   }
 }
