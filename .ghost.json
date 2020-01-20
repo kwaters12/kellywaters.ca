@@ -4,7 +4,7 @@
     "contentApiKey": "3ba589d4580bdb80a92187ceab"
   },
   "production": {
-    "apiUrl": "https://kellywaters.ca/ghost",
-    "contentApiKey": "7117aae707d74ec086e07cf0dd"
+    "apiUrl": "https://kellywaters.ca",
+    "contentApiKey": "3f08c3a57e8248a8f680065a59"
   }
 }
