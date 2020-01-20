@@ -1,7 +1,7 @@
 {
   "development": {
-    "apiUrl": "http://localhost:2368",
-    "contentApiKey": "3ba589d4580bdb80a92187ceab"
+    "apiUrl": "https://kellywaters.ca",
+    "contentApiKey": "3f08c3a57e8248a8f680065a59"
   },
   "production": {
     "apiUrl": "https://kellywaters.ca",
