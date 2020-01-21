@@ -1,0 +1,51 @@
+{
+  "url": "http://localhost:2368/",
+  "server": {
+    "port": 2368,
+    "host": "127.0.0.1"
+  },
+  "database": {
+    "client": "sqlite3",
+    "connection": {
+      "filename": "/Users/kellywaters/Development/kellywaters.ca/api/content/data/ghost-local.db"
+    }
+  },
+  "mail": {
+    "transport": "Direct"
+  },
+  "logging": {
+    "transports": [
+      "file",
+      "stdout"
+    ]
+  },
+  "process": "local",
+  "paths": {
+    "contentPath": "/Users/kellywaters/Development/kellywaters.ca/api/content"
+  },
+  "storage": {
+    "active": "ghost-storage-cloudinary",
+    "ghost-storage-cloudinary": {
+      "useDatedFolder": false,
+      "auth": {
+        "cloud_name": "djrhf4dub",
+        "api_key": "515444575248748",
+        "api_secret": "eMKMIDlzc7HJq2P0AQ37XGt9lYs"
+      },
+      "upload": {
+        "use_filename": true,
+        "unique_filename": false,
+        "overwrite": false,
+        "folder": "blog-images",
+        "tags": [
+          "blog"
+        ]
+      },
+      "fetch": {
+        "quality": "auto",
+        "secure": true,
+        "cdn_subdomain": true
+      }
+    }
+  }
+}
