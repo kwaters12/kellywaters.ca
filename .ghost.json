@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "https://kellywaters.ca",
-    "contentApiKey": "3f08c3a57e8248a8f680065a59"
+    "apiUrl": "http://localhost:2368",
+    "contentApiKey": "3ba589d4580bdb80a92187ceab"
   },
   "production": {
     "apiUrl": "https://0af2ea6e.ngrok.io",
-    "contentApiKey": "3f08c3a57e8248a8f680065a59"
+    "contentApiKey": "3ba589d4580bdb80a92187ceab"
   }
 }
