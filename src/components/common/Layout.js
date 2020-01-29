@@ -42,7 +42,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <Link to="/">
                                         {site.logo ?
                                             <img className="site-logo" src={site.logo} alt={site.title} />
-                                            : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                            : <Img fixed={data.file.childImageLarge.fixed} alt={site.title} />
                                         }
                                     </Link>
                                 </div>
@@ -56,8 +56,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             </div>
                             {isHome ?
                                 <div className="site-banner">
-                                    <h1 className="site-banner-title">{site.title}</h1>
-                                    <p className="site-banner-desc">{site.description}</p>
+                                    {site.logo ?
+                                        <img src={site.logo} alt={site.title} />
+                                        : <Img fixed={data.file.childImageSharp.fluid} alt={site.title} />
+                                    }
+                                    {/* <h1 className="site-banner-title">{site.title}</h1>
+                                    <p className="site-banner-desc">{site.description}</p> */}
                                 </div> :
                                 null}
                         </div>
@@ -115,6 +119,9 @@ const DefaultLayoutSettingsQuery = props => (
                     childImageSharp {
                         fixed(width: 30, height: 30) {
                             ...GatsbyImageSharpFixed
+                        }
+                        fluid(maxWidth: 400, maxHeight: 250) {
+                            ...GatsbyImageSharpFluid
                         }
                     }
                 }
