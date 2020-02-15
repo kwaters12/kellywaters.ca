@@ -7,7 +7,7 @@
   "database": {
     "client": "sqlite3",
     "connection": {
-      "filename": "/Users/kellywaters/Development/kellywaters.ca/api/content/data/ghost-local.db"
+      "filename": "./content/data/ghost-local.db"
     }
   },
   "mail": {
@@ -19,9 +19,9 @@
       "stdout"
     ]
   },
-  "process": "local",
+  "process": "systemd",
   "paths": {
-    "contentPath": "/Users/kellywaters/Development/kellywaters.ca/api/content"
+    "contentPath": "/Users/kellywaters/Development/okhu.ca/api/content"
   },
   "storage": {
     "active": "ghost-storage-cloudinary",
